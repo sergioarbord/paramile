@@ -42,14 +42,22 @@
             margin: 0 auto;
             padding: 20px;
         }
-        footer {
-            background-color: #343a40;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            font-size: 16px;
-        }
+       footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;  /* Fijamos el footer en la parte inferior */
+    bottom: 0;        /* Colocamos el footer en la parte inferior */
+    width: 100%;      /* Hace que el footer ocupe todo el ancho de la pantalla */
+    font-size: 16px;
+    z-index: 10;      /* Asegura que esté por encima de otros elementos */
+}
+
+/* Asegúrate de agregar un margen en la parte inferior del contenido */
+body {
+    margin-bottom: 60px;  /* Deja espacio suficiente para el footer */
+}
 
         /* Media Query para pantallas pequeñas */
         @media (max-width: 768px) {
