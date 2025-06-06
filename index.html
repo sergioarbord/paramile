@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Importante para la adaptabilidad en móviles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Inicio</title>
     <style>
         body {
@@ -19,7 +20,7 @@
             background-color: #6c757d;
             color: #ffffff;
             text-align: center;
-            padding: 50px;
+            padding: 50px 15px; /* Ajustamos padding */
             border-radius: 10px;
             margin-bottom: 30px;
         }
@@ -28,6 +29,7 @@
             border-left: 5px solid #ffc107;
             padding: 20px;
             border-radius: 8px;
+            margin-bottom: 20px;
         }
         .media img {
             border-radius: 8px;
@@ -36,7 +38,7 @@
             margin-top: 20px;
         }
         .container {
-            max-width: 900px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 20px;
         }
@@ -45,9 +47,7 @@
             color: white;
             text-align: center;
             padding: 15px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            position: relative;
             font-size: 16px;
         }
 
@@ -58,14 +58,20 @@
                 padding: 25px;   /* Aumentamos el espacio dentro del pie de página */
             }
             .jumbotron {
-                padding: 30px; /* Reducimos el padding para que no se vea tan grande en móvil */
+                padding: 30px 15px; /* Ajustamos el padding para no ocupar tanto espacio */
             }
             .alert {
-                font-size: 16px; /* Aumentamos el tamaño del texto en la alerta */
-                padding: 15px;   /* Ajustamos el padding para que se vea mejor */
+                font-size: 16px; /* Mejor legibilidad en la alerta */
+                padding: 15px;   /* Ajustamos el padding */
             }
             .container {
                 padding: 15px; /* Reducimos el padding en móviles */
+            }
+            h1 {
+                font-size: 2.5rem; /* Ajustamos el tamaño del encabezado */
+            }
+            p {
+                font-size: 1rem; /* Tamaño adecuado para el texto */
             }
         }
 
@@ -90,7 +96,7 @@
         </div>
 
         <div class="media">
-            <img src="https://preview.redd.it/nothing-phone-3a-pro-wallpaper-by-me-inspiration-from-3rd-v0-9ojbts018eve1.jpeg?width=2969&format=pjpg&auto=webp&s=cd38af41eb8663cc6d974e95b4e0c11bd703f764" class="mr-3 mx-auto d-block" alt="...">
+            <img src="https://preview.redd.it/nothing-phone-3a-pro-wallpaper-by-me-inspiration-from-3rd-v0-9ojbts018eve1.jpeg?width=2969&format=pjpg&auto=webp&s=cd38af41eb8663cc6d974e95b4e0c11bd703f764" class="mr-3 mx-auto d-block" alt="Imagen bonita">
         </div>
     </div>
 
